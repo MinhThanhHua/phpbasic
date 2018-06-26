@@ -19,7 +19,7 @@
     function findNumber($arr1, $arr2, $arr3) 
     {   
         $checkArr = checkArray($arr1, $arr2, $arr3);
-        if (strlen($checkArr) == 0) {
+        if (strlen($checkArr) != 0) {
             echo('Invalid parameter ' . $checkArr);
         } else {
             $number = in_array('1', $arr1);
