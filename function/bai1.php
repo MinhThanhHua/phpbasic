@@ -35,12 +35,12 @@
     function xoaTrungLap($arr1, $arr2, $arr3)
     {
         $checkArr = checkArray($arr1, $arr2, $arr3);
-        if (strlen($checkArr) == 0) {
+        if (strlen($checkArr) != 0) { 
+            return 'Invalid parameter ' . $checkArr;
+        } else {
             $mergeArr = array_merge($arr2, $arr3);
             $arrUnique = array_unique($mergeArr);
             return $arrUnique;
-        } else {
-            return 'Invalid parameter ' . $checkArr;
         }
     }
 
