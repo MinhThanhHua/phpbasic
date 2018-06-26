@@ -1,6 +1,6 @@
 <?php
     // kiểm tra 3 parameter truyền vào có phải arr ko
-    function checkArray($arr1, $arr2, $arr3)
+    function checkIsArray($arr1, $arr2, $arr3)
     {
         $arr = '';
         if (!is_array($arr1)) {
