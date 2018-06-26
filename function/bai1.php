@@ -15,7 +15,7 @@
         return $arr;
     }
 
-    // tìm số 1 trong arr1
+    //truyền 3 arr, tìm số 1 trong arr1, xuất thông báo
     function findNumber($arr1, $arr2, $arr3) 
     {   
         $checkArr = checkArray($arr1, $arr2, $arr3);
@@ -31,7 +31,7 @@
         }
     }
 
-    // cộng 2 arr và xóa giá trị trùng
+    //truyền 3 arr, cộng  arr 2 và 3 , sau đó trả về và xóa giá trị trùng ở arr mới(*)
     function xoaTrungLap($arr1, $arr2, $arr3)
     {
         $checkArr = checkArray($arr1, $arr2, $arr3);
@@ -44,7 +44,7 @@
         }
     }
 
-    // từ mảng (*) lấy giá trị chia hết cho 2
+    //truyền 3 arr, từ arr (*) , trả vể arr chứa giá trị chia hết cho 2
     function chiaHetCho2($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);
@@ -54,7 +54,7 @@
         return $arrFilter;
     }
 
-    //in va value tăng dần cua arr 1 mà có trùng giá trị với arrAll arr(*)
+    //truyền 3 arr, trả về arr chứa gia tri tăng dần cua arr 1 mà có gtri trùng giá trị với arr(*)
     function sapXepArr1($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);//=>arr(*)
@@ -63,7 +63,7 @@
         return $arrIntersect;
     }
 
-    // các số giảm dần của arr1 khác key với arr(*)
+    //truyền 3arr, trả về các số giảm dần của arr1 khác key với arr(*)
     function sapXepGiamArr1($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);

@@ -1,6 +1,6 @@
 <?php
-    // kiểm tra có phải string ko
-    function checkString($str1, $str2)
+    //Truyền 2 pamra kiểm tra xem có là dạng chuỗi, trả về thông báo
+    function checkIsString($str1, $str2)
     {
         $str = '';
         if (!is_string($str1)) {
@@ -12,7 +12,7 @@
         return $str;
     }
 
-    // tìm kiếm trong chuỗi
+    //Truyền 2 chuỗi, tìm vi trí chuỗi 1 trong chuỗi 2
     function findStr($str1, $str2)
     {
         $checkStr = checkString($str1, $str2);
@@ -28,13 +28,13 @@
         }
     }
 
-    // 2 loại hiển thị
+    //Hiển thị chuỗi theo 2 cách
     function showStr() {
         echo 'Money$__$money <br>';
         echo "Money\$__\$money";
     }
 
-    //kiểm tra byte trong str
+    //truyền 1 chuỗi, kiểm tra số byte trong chuỗi, xuất tbao
     function checkBytes($str)
     {
         $lengthStr = strlen($str); //đếm cả dấu
@@ -46,13 +46,13 @@
         }
     }
     
-    //cắt chuỗi
+    //truyền 1 chuỗi, cắt ký tự m bên phaỉ và trả về
     function trimStr($str)
     {
         echo rtrim($str, 'm');
     }
 
-    //đảo và cắt chuỗi
+    //truyền 1 chuỗi, đảo và cắt chuỗi và return
     function revAndTrim($str)
     {
         $revStr = strrev($str);
