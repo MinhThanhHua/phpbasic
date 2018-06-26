@@ -20,14 +20,14 @@
     {   
         $checkArr = checkArray($arr1, $arr2, $arr3);
         if (strlen($checkArr) == 0) {
+            echo('Invalid parameter ' . $checkArr);
+        } else {
             $number = in_array('1', $arr1);
             if ($number == 1) {
                 echo 'Found';
             } else {
                 echo 'Not found';
             }
-        } else {
-            echo('Invalid parameter ' . $checkArr);
         }
     }
 
