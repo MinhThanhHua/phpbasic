@@ -1,18 +1,17 @@
 <?php 
 $db = mysqli_connect("localhost", "root", "123456", "phpuser");
-        //1
 
-        
+        //mở session
         function sess_open($sess_path, $sess_name)
         {
             return true;
         }
-        //4
+        //đóng session
         function sess_close()
         {
             return true;
         }
-        //2
+        //nhận id, kiểm tra id trong db, thêm id, data nếu chưa có
         function sess_read($sess_id)
         {
             global $db;
@@ -30,6 +29,7 @@ $db = mysqli_connect("localhost", "root", "123456", "phpuser");
             }
         }
 
+        //nhận id và data, cập nhật lại data với id tương ứng,
         function sess_write($sess_id, $data)
         {
             global $db;
@@ -39,6 +39,7 @@ $db = mysqli_connect("localhost", "root", "123456", "phpuser");
             return true;
         }
 
+        //xóa session trong db với id tương ứng
         function sess_destroy($sess_id)
         {
             global $db;

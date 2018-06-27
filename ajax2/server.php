@@ -1,6 +1,6 @@
 <?php
 
-    // tính tổng giá trị trong mảng
+    //truyền arr và độ dài, tính tổng giá trị trong mảng, trả về tong
     function tinhTong($arr, $lenArr)
     {
         $tong = 0;
@@ -10,7 +10,7 @@
         return $tong;
     }
 
-    // tính tích giá trị trong mảng
+    //truyền arr và độ dài, trả về tích giá trị trong mảng
     function tinhTich($arr, $lenArr)
     {
         $tich = 1;
@@ -20,6 +20,7 @@
         return $tich;
     }
 
+    //hàm main gọi lại các function trên
     function main() 
     {
         $str = $_POST['number'];

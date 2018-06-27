@@ -1,5 +1,5 @@
 <?php
-    //các cách cộng arr trong php
+    //3 cách cộng mảng trong php
     function demo() 
     {
         $arr = ['a' => 4,'b' => 5,'c' => 5];
@@ -12,13 +12,13 @@
         var_dump($b);
     }
 
-    //truyền 2 param, xuất câu chào
+    //truyền tên và tuổi, xuất câu chào
     function helloWorld($name, $age)
     {
         echo 'Xin chào tôi tên là: ' . $name . ' ' . $age . ' tuổi<br>';
     }
 
-    //demo hàm array map
+    //chạy thử hàm array map
     function demo1()
     {
         $name = ['a'=> 'Phúc','b'=> 'Lộc', 'Thọ'];
@@ -32,7 +32,7 @@
         echo "Ông $key tên là: $value";
     }
     
-    //demo hàm arr walk
+    //chạy thử hàm arr walk
     function demo2()
     {
         $name = ['a'=> 'Phúc','b'=> 'Lộc','c' => 'Thọ'];

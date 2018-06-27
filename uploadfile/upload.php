@@ -14,7 +14,7 @@
     </form>
     <?php
         if (isset($_FILES['image'])) {
-            $path = './image/'.$_FILES['image']['name'];
+            $path = './image/' . $_FILES['image']['name'];
             if (file_exists($path)) {
                 echo 'trùng file';
                 return;

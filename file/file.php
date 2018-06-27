@@ -1,8 +1,8 @@
 <?php
     $list = array
         (
-        "Peter,Griffin,Oslo,Norway",
-        "Glenn,Quagmire,Oslo,Norway",
+        "Peter, Griffin, Oslo, Norway",
+        "Glenn, Quagmire, Oslo, Norway",
     );
 
     $file = fopen("contacts.csv", "w");
@@ -19,7 +19,7 @@
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
     header('Content-Length: ' . filesize('contacts.csv'));
-    flush(); // Flush system output buffer
+    flush(); 
     readfile('contacts.csv');
     exit;
 //http://localhost/phpgmo/file/file.php

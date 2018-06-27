@@ -12,10 +12,10 @@ setcookie('username', '', time() - 70); // xóa cookie
 </head>
 <body>
     <?php
-    if (isset($_COOKIE['username'])) {
-        echo $_COOKIE['username'];
+    if (!isset($_COOKIE['username'])) {
+        echo 'Chưa có';    
     } else {
-        echo 'Chưa có';
+        echo $_COOKIE['username'];
     }
     ?>
     <script>
