@@ -1,5 +1,12 @@
 <?php
-    //Truyền 2 pamra kiểm tra xem có là dạng chuỗi, trả về thông báo
+	/**
+	* Chức năng funtion: kiểm tra chuỗi
+	* @param <string> $str1
+	* @param <string> $str2
+	
+	* @return <str>
+	*
+	*/
     function checkIsString($str1, $str2)
     {
         $str = '';
@@ -12,7 +19,14 @@
         return $str;
     }
 
-    //Truyền 2 chuỗi, tìm vi trí chuỗi 1 trong chuỗi 2
+    /**
+	* Chức năng funtion: tìm vi trí chuỗi 1 trong chuỗi 2
+	* @param <string> $str1
+	* @param <string> $str2
+	
+	* @return <str>
+	*
+	*/
     function findStr($str1, $str2)
     {
         $checkStr = checkString($str1, $str2);
@@ -28,13 +42,22 @@
         }
     }
 
-    //Hiển thị chuỗi theo 2 cách
+    /**
+	* Chức năng funtion: Hiển thị chuỗi theo 2 cách
+	* @return <str>
+	*/
     function showStr() {
         echo 'Money$__$money <br>';
         echo "Money\$__\$money";
     }
 
-    //truyền 1 chuỗi, kiểm tra số byte trong chuỗi, xuất tbao
+    /**
+	* Chức năng funtion: kiểm tra số byte trong 1 chuỗi
+	* @param <string> $str1
+	
+	* @return <str>
+	*
+	*/
     function checkBytes($str)
     {
         $lengthStr = strlen($str); //đếm cả dấu
@@ -46,13 +69,25 @@
         }
     }
     
-    //truyền 1 chuỗi, cắt ký tự m bên phaỉ và trả về
+    /**
+	* Chức năng funtion: cắt ký tự 'm' bên phaỉ
+	* @param <string> $str
+	
+	* @return <str>
+	*
+	*/
     function trimStr($str)
     {
         echo rtrim($str, 'm');
     }
 
-    //truyền 1 chuỗi, đảo và cắt chuỗi và return
+    /**
+	* Chức năng funtion: đảo và cắt chuỗi
+	* @param <string> $str
+	
+	* @return <str>
+	*
+	*/
     function revAndTrim($str)
     {
         $revStr = strrev($str);

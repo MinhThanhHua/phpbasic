@@ -1,5 +1,9 @@
 <?php
-    //3 cách cộng mảng trong php
+       /**
+    * Chức năng funtion: 3 cách cộng mảng trong php
+    
+	*   @return <mảng arr[]>
+	*/
     function demo() 
     {
         $arr = ['a' => 4,'b' => 5,'c' => 5];
@@ -12,13 +16,23 @@
         var_dump($b);
     }
 
-    //truyền tên và tuổi, xuất câu chào
+    /**
+    * Chức năng funtion: xuất câu chào
+	*   @param <string> $name
+    *   @param <int> $age 
+    
+	*   @return <string>
+	*/
     function helloWorld($name, $age)
     {
         echo 'Xin chào tôi tên là: ' . $name . ' ' . $age . ' tuổi<br>';
     }
 
-    //chạy thử hàm array map
+
+    /*Chức năng funtion: demo hàm array_map
+
+    * @return: gọi tới hàm helloWorld
+    */
     function demo1()
     {
         $name = ['a'=> 'Phúc','b'=> 'Lộc', 'Thọ'];
@@ -26,7 +40,13 @@
         array_map('helloWorld', $name, $age);
     }
 
-    //truyền key, value từ arr, trả về câu chào
+    /**
+    * Chức năng funtion: xuất câu chào
+	*   @param <string> $value
+    *   @param <string> $key
+    
+	*   @return <string>
+	*/
     function info($value, $key)
     {
         echo "Ông $key tên là: $value";

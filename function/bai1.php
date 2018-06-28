@@ -1,5 +1,13 @@
 <?php
-    // kiểm tra 3 parameter truyền vào có phải arr ko
+
+    /**
+    * Chức năng funtion: kiểm tra mảng
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+
+    *   @return <string>
+	*/
     function checkIsArray($arr1, $arr2, $arr3)
     {
         $arr = '';
@@ -15,7 +23,14 @@
         return $arr;
     }
 
-    //truyền 3 arr, tìm số 1 trong arr1, xuất thông báo
+    /**
+    * Chức năng funtion: tìm giá trị trong mảng
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+
+    *   @return <string>
+	*/
     function findNumber($arr1, $arr2, $arr3) 
     {   
         $checkArr = checkArray($arr1, $arr2, $arr3);
@@ -31,7 +46,14 @@
         }
     }
 
-    //truyền 3 arr, cộng  arr 2 và 3 , sau đó trả về và xóa giá trị trùng ở arr mới(*)
+    /**
+    * Chức năng funtion: cộng  arr 2 và 3 , sau đó trả về và xóa giá trị trùng ở arr mới(*)
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+
+    *   @return <mảng arr[]>
+	*/
     function xoaTrungLap($arr1, $arr2, $arr3)
     {
         $checkArr = checkArray($arr1, $arr2, $arr3);
@@ -44,7 +66,14 @@
         }
     }
 
-    //truyền 3 arr, từ arr (*) , trả vể arr chứa giá trị chia hết cho 2
+    /**
+    * Chức năng funtion: từ arr (*) , trả vể arr chứa giá trị chia hết cho 2
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+
+    *   @return <mảng arr[]>
+	*/
     function chiaHetCho2($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);
@@ -54,7 +83,14 @@
         return $arrFilter;
     }
 
-    //truyền 3 arr, trả về arr chứa gia tri tăng dần cua arr 1 mà có gtri trùng giá trị với arr(*)
+    /**
+    * Chức năng funtion: trả về arr chứa gia tri tăng dần cua arr 1 mà có gtri trùng giá trị với arr(*)
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+
+    *   @return <mảng arr[]>
+	*/
     function sapXepArr1($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);//=>arr(*)
@@ -63,7 +99,15 @@
         return $arrIntersect;
     }
 
-    //truyền 3arr, trả về các số giảm dần của arr1 khác key với arr(*)
+
+    /**
+    * Chức năng funtion: trả về các số giảm dần của arr1 khác key với arr(*)
+	*   @param <mảng arr[]> $arr1
+	*   @param <mảng arr[]> $arr2
+    *   @param <mảng arr[]> $arr3
+    
+    *   @return <string>
+	*/
     function sapXepGiamArr1($arr1, $arr2, $arr3)
     {
         $arrAll = xoaTrungLap($arr1, $arr2, $arr3);

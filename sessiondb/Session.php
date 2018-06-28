@@ -6,12 +6,19 @@ $db = mysqli_connect("localhost", "root", "123456", "phpuser");
         {
             return true;
         }
-        //đóng session
+            /**
+        * Chức năng funtion : đóng session
+        * @return <boolean>
+        */
         function sess_close()
         {
             return true;
         }
-        //nhận id, kiểm tra id trong db, thêm id, data nếu chưa có
+        /**
+        * Chức năng funtion : đoc session
+        * @param <string> $sess_id
+        * @return <string>
+        */
         function sess_read($sess_id)
         {
             global $db;
@@ -29,7 +36,15 @@ $db = mysqli_connect("localhost", "root", "123456", "phpuser");
             }
         }
 
-        //nhận id và data, cập nhật lại data với id tương ứng,
+            	/**
+        * Chức năng funtion: viết function
+        * @param <string> $sess_id
+        * @param <string> $data
+        
+        * @return <boolean>
+        * @throw <exception trả về>
+        *
+        */
         function sess_write($sess_id, $data)
         {
             global $db;
@@ -39,7 +54,13 @@ $db = mysqli_connect("localhost", "root", "123456", "phpuser");
             return true;
         }
 
-        //xóa session trong db với id tương ứng
+        /**
+        * Chức năng funtion: xóa session có id đươc truyền vào
+        * @param <string> $sess_id
+        
+        * @return <boolean>
+        *
+        */
         function sess_destroy($sess_id)
         {
             global $db;

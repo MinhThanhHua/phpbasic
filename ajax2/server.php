@@ -1,6 +1,12 @@
 <?php
 
-    //truyền arr và độ dài, tính tổng giá trị trong mảng, trả về tong
+    /**
+    * Chức năng funtion: tính giá trị trong mảng  
+	*   @param <mảng> $arr
+    *   @param <int> $lenArr
+    
+	*   @return <int>
+	*/
     function tinhTong($arr, $lenArr)
     {
         $tong = 0;
@@ -10,7 +16,13 @@
         return $tong;
     }
 
-    //truyền arr và độ dài, trả về tích giá trị trong mảng
+    /**
+    * Chức năng funtion: tính tích giá trị trong mảng
+	*   @param <mảng> $arr
+    *   @param <int> $lenArr 
+    
+	*   @return <int>
+	*/
     function tinhTich($arr, $lenArr)
     {
         $tich = 1;

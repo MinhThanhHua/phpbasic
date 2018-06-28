@@ -6,20 +6,35 @@
         return true;
     }
 
-    // đóng session
+    /**
+	* Chức năng funtion : đóng session
+	* @return <boolean>
+	*/
     function sess_close() {
         print "Session closed.\n";
         return true;
     }
 
-    //nhận session id, đọc session có id đó
+    	/**
+	* Chức năng funtion : đoc session
+	* @param <string> $sess_id
+	* @return <string>
+	*/
     function sess_read($sess_id) {
         print "Session read.\n";
         print "Sess_ID: $sess_id\n";
         return '';
     }
 
-    //nhận id_session, data
+    	/**
+	* Chức năng funtion: viết function
+	* @param <string> $sess_id
+	* @param <string> $data
+	
+	* @return <boolean>
+	* @throw <exception trả về>
+	*
+	*/
     function sess_write($sess_id, $data) {
         print "Session value written.\n";
         print "Sess_ID: $sess_id\n";
@@ -27,7 +42,14 @@
         return true;
     }
 
-    //xóa session có id đươc truyền vào
+    
+    	/**
+	* Chức năng funtion: xóa session có id đươc truyền vào
+	* @param <string> $sess_id
+	
+	* @return <boolean>
+	*
+	*/
     function sess_destroy($sess_id) {
         print "Session destroy called.\n";
         return true;
