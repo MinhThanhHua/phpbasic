@@ -1,0 +1,23 @@
+.pop-outer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.pop-inner{
+    background-color: floralwhite;
+    width: 400px;
+    height: 150px;
+    margin: 15% 40%;
+}
+.pop-inner input:first-child{
+    float:right;
+    border: none;
+    background-color: white;
+}
+#popup{
+    margin-left: 100px;
+    margin-right: 50px
+}
